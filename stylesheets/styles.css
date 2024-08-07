@@ -1,0 +1,138 @@
+ 
+ body{
+    background-color: #000000;
+ }
+ .neonText{
+    color:#fff;
+    text-shadow:
+     /* Main Glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* After Glow */
+    0 0 42px rgb(105, 232, 255),
+    0 0 82px rgb(105, 232, 255),
+    0 0 92px rgb(105, 232, 255),
+    0 0 102px rgb(105, 232, 255),
+    0 0 151px rgb(105, 232, 255)
+    ;
+
+}
+h1, h2{
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+h1{
+    font-size:6.2rem;
+    animation: pulsate 0.11s ease-in-out infinite alternate;
+    border:0.2rem solid #fff;
+    border-radius: 2rem;
+    padding:0.4em;
+    box-shadow:  0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem rgb(105, 232, 255),
+    0 0 0.8rem rgb(105, 232, 255),
+    0 0 2.8rem rgb(105, 232, 255),
+    inset 0 0 1.3rem rgb(105, 232, 255)
+    ;
+}
+
+h2{
+font-size:1.8rem;
+}
+
+@media screen and(prefers-reduced-motion){
+h1{
+    animation:none;
+}
+}
+
+@keyframes pulsate{
+100%{
+    text-shadow: 
+    0 0 4px #fff,
+    0 0 11px #fff,  
+    0 0 19px #fff,
+    0 0 40px rgb(105, 232, 255),
+    0 0 80px rgb(105, 232, 255),
+    0 0 90px rgb(105, 232, 255),
+    0 0 100px rgb(105, 232, 255),
+    0 0 150px rgb(105, 232, 255);
+}
+
+0%{
+    text-shadow: 
+    0 0 2px #fff,
+    0 0 4px #fff,  
+    0 0 4px #fff,
+    0 0 10px rgb(105, 232, 255),
+    0 0 45px rgb(105, 232, 255),
+    0 0 55px rgb(105, 232, 255),
+    0 0 70px rgb(105, 232, 255),
+    0 0 80px rgb(105, 232, 255);
+}
+}
+
+.contain{
+    margin-top:20vh;
+}
+
+ .game-container{
+/* margin: 0; */
+display: flex;
+justify-content: center;
+/* align-content: center; */
+display: grid;
+/* grid-auto-rows: 100px; */
+/* grid-auto-columns: 100px; */
+/* grid-template-columns:repeat(4,1fr); */
+height: auto;
+width: auto;
+/* column-gap: 1px;
+row-gap: 1px; */
+min-width: none;
+margin-bottom: 0;
+padding: 10%;
+top: auto;
+}   
+
+div.game {
+    margin: 0;
+    display: grid;
+    position: center;
+    width: 50vw;
+    height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+}
+    
+    
+body{
+padding: 0;
+margin: 0;
+}
+    
+ 
+ 
+.game-cell {
+    animation: pulsate 0.11s ease-in-out infinite alternate;
+width: 150px;
+height: 100px; 
+padding: 20px; 
+display: grid;  
+border: 1px solid;
+box-sizing: border-box;
+border-color: #000000;
+border-block-start-color: #c8e6ff;
+box-shadow:  0 0 .2rem #fff,
+0 0 .1rem #fff,
+0 0 1rem rgb(105, 232, 255),
+0 0 0.4rem rgb(105, 232, 255),
+0 0 1.8rem rgb(105, 232, 255),
+inset 0 0 0.8rem rgb(105, 232, 255)
+;
+}
+
