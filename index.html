@@ -6,24 +6,14 @@
    <link rel="stylesheet" href="stylesheets/styles.css">
    <link href='https://fonts.googleapis.com/css?family=Sacramento:400' rel="stylesheet" type="text/css">
 </head>
-<style>
-    body{
-        font-size:18px;
-        font-family:"Sacramento",sans-serif;
-        background-color: #010a01;
-        background-image: url("brickwall.jpg");
-        display:flex;
-        justify-content: center;
-        align-items:center;
-      }
- 
-</style>
+
 <body>
-   <div class="contain">
+   <div class="container">
+   <div class="logo-container">
       <h1 class="neonText">Tic-Tac 
        <br>Glow</h1> 
    </div>
-</br>
+
 <div class="game-container">
    <div class="game">
         <div id="1"class="game-cell"></div>
@@ -43,7 +33,12 @@
         <div id="15"class="game-cell"></div>
         <div id="16"class="game-cell"></div>
       </div>
- </div>  
+ </div>
+ <div class="controls-container">
+ <button id="start-game">Start</button>
+ <button id="reset-game">Reset</button>
+</div>
+</div>
    <script src="scripts/script.js"></script>
   </body>
     
