@@ -1,7 +1,55 @@
  
- body{
-    background-color: #000000;
+    body{
+        /* font-size:18px; */
+        background-color: #000000;
+        display:flex; 
+        justify-content: center;
+        align-items:center;
+        height: 100vh;
+        margin: 0;
+        font-family:"Sacramento",sans-serif;
+    
+      }
+
+ .container{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   gap: 20px;
  }
+
+ .logo-container{
+    /* margin-bottom: 20px; */
+    text-align: center;
+ }
+
+ .controls-container{
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ .game-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }  
+
+ button{
+    background-color: #333;
+    color:#fff;
+    border:none;
+    padding: 10px 20px;
+    margin:10px;
+    cursor:pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+ }
+ button:hover{
+    background-color: #555;
+ }
+
  .neonText{
     color:#fff;
     text-shadow:
@@ -20,7 +68,6 @@
 }
 h1, h2{
     text-align: center;
-    /* text-transform: uppercase; */
     font-weight: 400;
     line-height: 1;
 
@@ -77,29 +124,11 @@ h1{
 }
 }
 
-.contain{
+/* .contain{
     margin-top:20vh;
-}
+} */
 
- .game-container{
-/* margin: 0; */
-display: flex;
-justify-content: center;
-/* align-content: center; */
-display: grid;
-/* grid-auto-rows: 100px; */
-/* grid-auto-columns: 100px; */
-/* grid-template-columns:repeat(4,1fr); */
-height: auto;
-width: auto;
-/* column-gap: 1px;
-row-gap: 1px; */
-min-width: none;
-margin-bottom: 0;
-padding: 10%;
-top: auto;
-}   
-
+ 
 div.game {
     margin: 0;
     display: grid;
