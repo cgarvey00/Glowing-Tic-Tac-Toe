@@ -5,21 +5,24 @@
         align-items:center;
         height: 100vh;
         margin: 0;
+        overflow-y: auto;
         font-family:"Sacramento",sans-serif;
-    overflow: hidden;
+ 
       }
 
  .container{
    display:flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
-   height: 95vh;
-   padding: 20px 0;
+   justify-content: flex-start;
+   min-height: 95vh;
+   padding: 40px 0;
+   box-sizing: border-box;
+   width: 100%;
  }
 
  .logo-container{
- margin-bottom: 20px;
+ margin: 140px 0 10px 0;
  text-align: center;
  }
 
@@ -122,18 +125,14 @@ h1{
 }
 }
 
-/* .contain{
-    margin-top:20vh;
-} */
 
- 
 div.game {
     /* margin: 0; */
     display: grid;
     /* position: center; */
     gap:10px;
-    /* width: 100%;
-    max-width: 80vw; */
+    width: 100%;
+    max-width: 80vw; 
     /* height: 50vh; */
     grid-template-columns: repeat(4, 1fr);
 }
@@ -166,3 +165,26 @@ animation: pulsate 0.11s ease-in-out infinite alternate;
 box-sizing: border-box;
 }
 
+
+
+
+  /* Responsive Design */
+
+  @media screen and (max-width:768px){
+    h1{
+        font-size: 3.5rem;
+    }
+    .logo-container{
+        margin: 40px 0 10px 0;
+        text-align: center;
+        }
+    
+    .game-cell{
+        width:60px;
+        height: 60px;
+    }
+
+    button{
+        font-size: 1rem;
+    }
+}
