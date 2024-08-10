@@ -25,6 +25,31 @@ const combinations=[
 /*----- cached element references -----*/
 /*----- event listeners -----*/
 /*----- functions -----*/
+
+const gameReset= () =>{
+
+};
+
+const gameDraw= () =>{
+
+};
+
+const disableGridBoxes= () =>{
+
+};
+
+const enableGridBoxes= () =>{
+
+};
+
+const checkVictor= () =>{
+
+};
+
+const presentVictor= () =>{
+
+};
+
 const grid = document.querySelectorAll('.game-cell');
 grid.forEach((box) =>{
 
@@ -32,12 +57,12 @@ box.addEventListener("click",()=>{
 // box.innerHTML="<center><img src='images/oes.png' style='width: 80px; height: 70px;'/></center>";
 
 if(turn){
-box.innerHTML="<center><h2 style='width: 50px;  color:red; font-size:40px; '>X</h2></center>";
+box.innerHTML="<center><h2 style='width: 10px;  color:red; font-size:40px; '>X</h2></center>";
 count++;
 turn=false;
 }
 else if (!turn) {
-    box.innerHTML="<center><h2 style='width: 50px;  color:blue; font-size:40px; '>0</h2></center>";
+    box.innerHTML="<center><h2 style='width: 10px;  color:blue; font-size:40px; '>0</h2></center>";
     count++;
     turn=true;
 } 
